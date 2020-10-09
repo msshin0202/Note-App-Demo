@@ -20,12 +20,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         notesTableView.delegate = self
         notesTableView.dataSource = self
+        
         APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchNotes()
-        print(notesArray)
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        APIFunctions.functions.fetchNotes()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        APIFunctions.functions.fetchNotes()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddNoteViewController
+        
+        if segue.identifier == "updateNoteSegue" {
+            
+            vc.note = notesArray[notesTableView.indexPathForSelectedRow!.row]
+            vc.update = true
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,6 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = notesArray[indexPath.row].title
         return cell
     }
+
 
 
 }

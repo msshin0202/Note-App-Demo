@@ -25,4 +25,29 @@ class APIFunctions {
         
     }
     
+    func addNote(title: String, date: String, note: String) {
+        
+        AF.request("http://192.168.1.68:8081/create", method: .post, encoding: URLEncoding.httpBody, headers: ["title": title, "date": date, "note": note]).responseJSON { (response) in
+            print(response)
+        }
+        
+    }
+    
+    func updateNote(id: String, title: String, date: String, note: String) {
+        
+        
+        AF.request("http://192.168.1.68:8081/update", method: .post, encoding: URLEncoding.httpBody, headers: ["id": id, "title": title, "date": date, "note": note]).responseJSON { (response) in
+            print(response)
+        }
+        
+    }
+    
+    func deleteNote(id: String) {
+        
+        AF.request("http://192.168.1.68:8081/delete", method: .post, encoding: URLEncoding.httpBody, headers: ["id": id]).responseJSON { (response) in
+            print(response)
+        }
+        
+    }
+    
 }

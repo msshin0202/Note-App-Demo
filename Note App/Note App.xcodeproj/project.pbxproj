@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC330A882530014300080DFD /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC330A872530014300080DFD /* AddNoteViewController.swift */; };
+		CC330A8B25300C9300080DFD /* NotePrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC330A8A25300C9300080DFD /* NotePrototypeCell.swift */; };
 		CC61E380252FF50D00701C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61E37F252FF50D00701C98 /* AppDelegate.swift */; };
 		CC61E382252FF50D00701C98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61E381252FF50D00701C98 /* SceneDelegate.swift */; };
 		CC61E384252FF50D00701C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61E383252FF50D00701C98 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC330A872530014300080DFD /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		CC330A8A25300C9300080DFD /* NotePrototypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePrototypeCell.swift; sourceTree = "<group>"; };
 		CC61E37C252FF50D00701C98 /* Note App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC61E37F252FF50D00701C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC61E381252FF50D00701C98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				CC61E38D252FF50F00701C98 /* Info.plist */,
 				CCD0CA40252FF8E50033E300 /* APIFunctions.swift */,
 				CCD0CA43252FF9340033E300 /* Note.swift */,
+				CC330A872530014300080DFD /* AddNoteViewController.swift */,
+				CC330A8A25300C9300080DFD /* NotePrototypeCell.swift */,
 			);
 			path = "Note App";
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 			files = (
 				CCD0CA44252FF9340033E300 /* Note.swift in Sources */,
 				CCD0CA41252FF8E50033E300 /* APIFunctions.swift in Sources */,
+				CC330A882530014300080DFD /* AddNoteViewController.swift in Sources */,
+				CC330A8B25300C9300080DFD /* NotePrototypeCell.swift in Sources */,
 				CC61E384252FF50D00701C98 /* ViewController.swift in Sources */,
 				CC61E380252FF50D00701C98 /* AppDelegate.swift in Sources */,
 				CC61E382252FF50D00701C98 /* SceneDelegate.swift in Sources */,
